@@ -1,9 +1,18 @@
+cargo-features = ["edition2021"]
+
 [package]
-name = "bpf-program-template"
+name = "idmon-core"
 version = "0.1.0"
 edition = "2021"
-license = "WTFPL"
+license = "Apache"
 publish = false
+authors = ["Sergey Bushnyak <sergey.bushnyak@sigrlami.eu>"]
+exclude = [
+    "TODO.org",
+    "test/*",
+]
+readme = "README.md"
+keywords = ["oracle", "solana"]
 
 [dependencies]
 solana-program = "=1.9.1"
